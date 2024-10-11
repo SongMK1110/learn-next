@@ -16,6 +16,7 @@ export default function ProductDetailPage({ productDetail }) {
 }
 
 export async function getServerSideProps(context) {
+  // /products/100
   const id = context.params.productId;
   const { data } = await fetchProductById(id);
 
